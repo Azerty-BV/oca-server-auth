@@ -21,7 +21,7 @@ class ResUsers(models.Model):
         groups="base.group_system",
     )
     oauth_access_max_token = fields.Integer(
-        string="Max Number of Simultaneous Connections", default=10, required=True
+        string="Max Number of Simultaneous Connections", default=1, required=True
     )
 
     # use the oauth_access_token field as oauth_master_uuid
